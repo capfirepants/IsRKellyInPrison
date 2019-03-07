@@ -1,11 +1,27 @@
 @import url("font-awesome.min.css");
-@import url("https://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic|Source+Code+Pro:400");
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 
 /*
 	Read Only by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
+#infotext{
+	margin: 0;
+	padding-bottom: 2.25em;
+}
+
+#reason {
+	text-align: center
+}
+
+#top-question{
+	text-align: center;
+}
+
+#bottom-question{
+	text-align: center;
+}
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -83,7 +99,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: #fff;
+		background: rgb(22, 22, 22);
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -99,7 +115,7 @@ input, select, textarea {
 
 	body, input, select, textarea {
 		color: #888;
-		font-family: "Lato", sans-serif;
+		font-family: 'Roboto', sans-serif;
 		font-size: 16pt;
 		font-weight: 400;
 		line-height: 1.75em;
@@ -117,7 +133,7 @@ input, select, textarea {
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #4acaa8 !important;
+			color: #e4e4e4 !important;
 		}
 
 	strong, b {
@@ -134,7 +150,7 @@ input, select, textarea {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #777;
+		color: #e4e4e4;
 		font-weight: 700;
 		line-height: 1em;
 		margin: 0 0 0.5625em 0;
@@ -1706,10 +1722,14 @@ input, select, textarea {
 
 /* Container */
 
+
 	.container {
 		margin: 0 auto;
 		max-width: calc(100% - 4.5em);
 		width: 45em;
+	}
+	.container-light{
+		background-color: #fafafa;
 	}
 
 		.container.xsmall {
@@ -1785,7 +1805,7 @@ input, select, textarea {
 	}
 
 	header.major h2 {
-		color: #4acaa8;
+		color: #e4e4e4;
 		font-size: 3.5em;
 	}
 
@@ -1848,7 +1868,7 @@ input, select, textarea {
 		input[type="email"]:focus,
 		select:focus,
 		textarea:focus {
-			border-color: #4acaa8;
+			border-color: #e4e4e4;
 		}
 
 	select {
@@ -1948,7 +1968,7 @@ input, select, textarea {
 
 		input[type="checkbox"]:focus + label:before,
 		input[type="radio"]:focus + label:before {
-			border-color: #4acaa8;
+			border-color: #e4e4e4;
 		}
 
 	input[type="checkbox"] + label:before {
@@ -2179,7 +2199,7 @@ input, select, textarea {
 
 		.image.main {
 			display: block;
-			height: 20em;
+			height: 30em;
 			border-radius: 0;
 		}
 
@@ -2377,7 +2397,7 @@ input, select, textarea {
 			}
 
 			ul.feature-icons li:before {
-				background: #4acaa8;
+				background: #e4e4e4;
 				border-radius: 100%;
 				color: #ffffff;
 				display: block;
@@ -2593,7 +2613,7 @@ input, select, textarea {
 		input[type="reset"].primary,
 		input[type="button"].primary,
 		.button.primary {
-			background-color: #4acaa8;
+			background-color: #e4e4e4;
 			color: #ffffff !important;
 		}
 
@@ -2675,7 +2695,7 @@ input, select, textarea {
 		-webkit-justify-content: space-between;
 		-ms-justify-content: space-between;
 		justify-content: space-between;
-		background: #4acaa8;
+		background: #e4e4e4;
 		color: #d2f2e9;
 		height: 100%;
 		overflow-y: auto;
@@ -2783,7 +2803,7 @@ input, select, textarea {
 
 						#header > nav ul li a.active {
 							background: #fff;
-							color: #4acaa8 !important;
+							color: #e4e4e4 !important;
 						}
 
 					#header > nav ul li:first-child {
@@ -2800,7 +2820,6 @@ input, select, textarea {
 /* Main */
 
 	#main > section {
-		border-top: solid 6px #f4f4f4;
 	}
 
 		#main > section > .container {
@@ -2814,11 +2833,11 @@ input, select, textarea {
 /* Footer */
 
 	#footer {
-		background: #fafafa;
+		background: rgb(22, 22, 22);
 		border-top: 0;
 		color: #c0c0c0;
 		overflow: hidden;
-		padding: 4em 0 2em 0;
+		padding: 2em 0 0em 0;
 	}
 
 		#footer .copyright {
@@ -2878,7 +2897,7 @@ input, select, textarea {
 		/* Main */
 
 			#main > section > .container {
-				padding: 4em 0 2em 0;
+				padding: 1em 0 0 0;
 			}
 
 	}
@@ -2910,7 +2929,7 @@ input, select, textarea {
 /* Medium */
 
 	#titleBar {
-		display: none;
+		display: none !important;
 	}
 
 	@media screen and (max-width: 1024px) {
@@ -2990,7 +3009,8 @@ input, select, textarea {
 		/* Header Panel */
 
 			#titleBar {
-				-moz-backface-visibility: hidden;
+				display: none;
+				-moz-backface-visibility: none;
 				-webkit-backface-visibility: hidden;
 				-ms-backface-visibility: hidden;
 				backface-visibility: hidden;
@@ -3047,7 +3067,7 @@ input, select, textarea {
 					}
 
 					#titleBar .toggle:before {
-						background: #4acaa8;
+						background: #e4e4e4;
 						color: #ffffff;
 						content: '\f0c9';
 						display: block;
